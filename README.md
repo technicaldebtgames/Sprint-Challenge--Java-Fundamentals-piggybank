@@ -23,9 +23,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+
+I used classes to create objects that represent data in our database. Spring/Maven/Hibernate/etc. are used to automatically generate methods and/or other objects that easily allow me to create some methods to manipulate the data when endpoints are hit.
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+Input: Entering source code.
+Processing: Compiling and building the code.
+Output: Run/execute and display output.
+
+The end product of the development cycle with Java is generating a useable program for yourself or an end user. That relies on the output.
+
+The steps leading up to it are where the logic of the program are built. Compiling allows the compiler to take what you have written in the first step and make sure it runs, and also optimizes the program in its own way.
+
 3. Explain how Java being a strongly typed language affected you solution.
+
+Java's strong typing requires you to be aware of the types you are using. When using Lists and ArrayLists for instance, they need to know the type of objects or value types they will be holding in order to allocate memory effectively. Declaring those as type Coin lets them know they will be holding a Coin object as defined by the Coin class.
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+Java interfaces can't have implementations. Abstract classes CAN have methods etc. that define default behavior.
+
+public interface CoinRepository extends CrudRepository<Coin, Long> is a good example of declaring an interface which is itself inheriting from another interface.
 
 ## Instructions
 
